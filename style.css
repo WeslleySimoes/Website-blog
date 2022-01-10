@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+
+/*------------------- HEADER_CABECALHO -----------------*/
+#cabecalho
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 54px;
+    /*border: 1px solid grey;*/
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container-cabecalho
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+}
+
+#menu li{
+    margin-left: 10px;
+}
+
+#menu li a, #cabecalho a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+
+#logo{
+    font-weight: bold;
+    font-size: 19px;
+}
+/*------------------- BANNER -----------------*/
+
+#banner{
+    margin-top: 54px;
+    width: 100%;
+    height: 400px;
+   /* border: 1px solid grey;*/
+    background-image: url(img/montanha2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-main{
+    display: flex;
+   /* border: 1px solid grey;*/
+}
+
+main{
+    padding: 0 5px;
+    width: 70%;
+    /*border: 1px solid grey;*/
+}
+
+aside{
+    padding: 0 5px;
+    width: 30%;
+}
+
+.container-main article{
+    /*border: 1px solid grey;*/
+    padding: 10px;
+    background-color: white;
+    margin: 15px 0;
+}
+
+
+.container-main article span{
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.container-main article img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+.container-main article p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+.container-main article a{
+    display: inline;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.aside-item{
+    margin: 15px 0;
+    background-color: white;
+}
+
+.aside-item h2{
+    background-color: #424242;
+    color: white;
+    text-align: center;
+    padding: 5px 0 ;
+}
+
+.aside-item p{
+    padding: 10px;
+}
+
+
+/*Sobre mim*/
+
+#sobreMim img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#sobreMim h3 {
+    text-align: center;
+}
+
+#sobreMim p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/*categorias*/
+
+#categorias-links{
+    padding: 5px;
+}
+#categorias-links ul li a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+}
+
+#categorias-links ul li a{
+    font-weight:700;
+    color: rgb(63, 63, 63);
+}
+
+#categorias-links ul li a span {
+   padding: 2px;
+   background-color: grey;
+   color: white;
+}
+
+#categorias-links ul li a:hover{
+    color: grey;
+}
+
+
+#tags-popular{
+    padding: 5px;
+}
+
+
+#tags-popular a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    padding: 2px 15px ;
+    border-radius: 25px;
+    margin: 5px 0;
+    
+}
+
+#tags-popular a:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+   /* margin-top: 15px;*/
+}
+
+footer a{
+    text-decoration: none;
+    color: green;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 700px)
+{
+    .container-main   {
+        flex-direction: column;
+    }
+
+    .container-main article img{
+        width: 100%;
+        height: 300px;
+    }
+
+    main,aside{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .aside-item,.container-main article
+    {
+        margin-top: 15px;
+    }
+
+    .aside-item{margin-bottom: 15px;}
+
+    #sobreMim img {width: 200px; height: 200px;}
+}   
+
